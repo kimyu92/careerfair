@@ -1,0 +1,42 @@
+.event {
+	padding: 26px 32px;
+	margin-bottom: 3em; 
+	background: #ffffff;
+	border: 3px solid #DDE4E6;
+	border-radius: 6px;
+}
+.event:after,
+.event:before {
+ 	right: 100%; top: 50%; border: solid transparent; content: " "; 
+ 	height: 0; width: 0; position: absolute; pointer-events: none;
+}
+.event:after {
+ 	border-right-color: #ffffff; border-width: 10px; margin-top: -10px;
+}
+.event:before {
+ 	border-right-color: #DDE4E6; border-width: 15px; margin-top: -15px;
+}
+.event .date {
+	position: absolute; top: 45%; margin-top: -24px; left: -106px; width: 68px; line-height: 58px; text-align: center; background: #5BCF80; display: block; z-index: 120; color: #fff; border-radius: 50%; border: 5px solid #FFF; font-family: Oswald; font-weight: 400;
+}
+.event.current .date {
+	border-color: #345; outline: 5px solid #FFF; background-color: #345;
+}
+.timeline + .timeline .event:last-child p:before {
+	height: 76%
+}
+.event h4 {
+	font-weight: 400; margin: 0; padding: 0;
+}
+.event h5 {
+	margin: 0; padding: 0 0 .3em 0; font-size: 1.2em; text-transform: uppercase; font-weight: 800; color: #BDBDBD;
+}
+.event h6 {
+	font-weight: 380; margin: 0; padding: 0;
+}
+.event p {
+	margin: .6em 0 .2em 0
+}
+.event p:before {
+	display: block; content: ""; position: absolute; top: -30px; left: -72px; height: 160%; width: 4px; background: #DDE4E6;
+}
